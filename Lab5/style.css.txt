@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+
+        body  {
+                        background: url("https://www.planwallpaper.com/static/images/i-should-buy-a-boat.jpg") no-repeat center center fixed;
+                        -webkit-background-size: cover;
+                        -moz-background-size: cover;
+                        -o-background-size: cover;
+                        background-size: cover;
+                        text-align: center;
+                        margin: 0;
+                        padding: 0;
+                        font-family: Anton, sans-serif;
+                }
+
+
+h1{
+  font-family: 'Ubuntu', 'Indie Flower', sans-serif;
+  text-align: center;
+}
+
+
+                table {
+                        width: 100%;
+                        background: rgba(211,211,11,0.1);
+                        border: 3px solid black;
+                }
+
+                table, th, td {
+                        border: 5px solid black;
+                        border-collapse: collapse;
+                }
+
+                th, td {
+                        padding: 8px;
+                        text-align: left;
+                }
+
+                div {
+                        margin: 0 auto;
+                        text-align: left;
+                        width: 600px;
+                        display: inline-block;
+                        border-radius: 3px;
+                        background-color: #f2f2f2;
+                        padding: 20px;
+                        font-size: 20px;
+                }
+
+                img {
+                        width:200px;
+                        height:200px;
+                }

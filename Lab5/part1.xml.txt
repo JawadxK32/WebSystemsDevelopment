@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="lab07.xsl" ?>
+<tracks>
+        <radioname>Yimago Radio 2</radioname>
+        <rank>1</rank>
+        <isradionomy>1</isradionomy>
+        <radurl>http://www.radionomy.com/yimago-radio-2</radurl>
+        <track>
+                <uniqueid>3537448471</uniqueid>
+                <title>Honey (2003)</title>
+            <artists>Baba B.</artists>
+            <starttime>2016-11-21 01:57:16.387</starttime>
+            <playduration>208064</playduration>
+            <current>1</current>
+
+                    <cover>http://i3.radionomy.com/tracks/232/afd9a2ae-3970-4e37-9707-9bcf3fe7211b?radiouid=8284da0b-1ab2-4aae-b779-3eecaf7c584e</cover>
+
+
+
+
+
+                <callmeback>209104</callmeback>
+
+
+
+
+
+        </track>
+
+
+    </tracks>

@@ -1,0 +1,5 @@
+Part1:
+http://www.scs.ryerson.ca/~jkhudada/lab05/part1.php
+
+Part2:
+http://webdev.scs.ryerson.ca:8080/jkhudada/part2.asp

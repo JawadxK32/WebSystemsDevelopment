@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>CPS530 Lab01 Main Page</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>
+    <center>
+        <form method="get" action="../index.html">
+            <button type="submit">Home</button>
+        </form>
+    </center>
+<script>
+function passWord()
+    {
+    var test = 1;
+    var password = prompt('Enter the password below',' ');
+    while (test < 5)
+    {
+        if (!password) {
+            history.go(-1);
+        }
+
+if (password.toLowerCase() == "jkhudada")
+{
+    alert('ACCESS GRANTED');
+    window.open('main.html');
+    break;
+}
+test+=1;
+var password = prompt('PASSWORD IS INCORRECT, PLEASE TRY AGAIN!','Password');
+}
+    if (password.toLowerCase() != "password" & test == 3) {
+        history.go(-1);
+        return " ";
+    }
+} 
+</script>
+<center>
+<pre><font color="blue" size="4">CPS530-021 Jawad Khudadad's Login Page</font></pre>
+<pre><font color="blue" size="4">Please Login with your Password</font></pre>
+<input type="button" value="Click to Login" onclick="passWord()">
+<pre><font color="blue" size="4">Password is "jkhudada"</font></pre>
+</center>
+</body></html>

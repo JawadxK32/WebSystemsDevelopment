@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+.perly{
+	font-family: 'Indie Flower', serif;
+        font-size: 70px;
+	text-align: center;
+}
+
+p{
+font-family: 'Ubuntu', sans-serif;
+font-size: 35px;
+text-align: center;
+
+}

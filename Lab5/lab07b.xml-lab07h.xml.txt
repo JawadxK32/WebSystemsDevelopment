@@ -1,0 +1,39 @@
+//lab7h.xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="lab7.xsl" ?>
+
+
+**************************************************************************************************
+//Lab7b.xml
+
+    <tracks>
+        <radioname>Yimago Radio 2</radioname>
+        <rank>1</rank>
+        <isradionomy>1</isradionomy>
+        <radurl>http://www.radionomy.com/yimago-radio-2</radurl>
+        <track>
+                <uniqueid>3532292842</uniqueid>
+                <title>Ka Huila Wai (1993)</title>
+            <artists>Israel Kamakawiwo&apos;ole</artists>
+            <starttime>2016-11-19 00:56:05.163</starttime>
+            <playduration>194537</playduration>
+            <current>1</current>
+
+                    <cover>http://i3.radionomy.com/tracks/232/7357090d-d48c-48d0-a857-cc4b5f618f68?radiouid=8284da0b-1ab2-4aae-b779-3eecaf7c584e</cover>
+
+
+
+
+
+                <callmeback>168135</callmeback>
+
+
+
+
+
+        </track>
+
+
+    </tracks>
+

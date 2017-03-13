@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CPS530 Lab02</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" title="Bootstrap" charset="utf-8">
+    <link rel="stylesheet" href="style.css" charset="utf-8">
+  </head>
+  <body>
+    <h3>WHEN DID YOU START PROGRAMMING?</h3>
+    <br>
+    <br>
+    <form class="song_rating" action="http://www2.scs.ryerson.ca/~jkhudada/cgi-bin/submit.pl" method="post">
+      <div class="row">
+        <div class="col-xs-3">
+          <input required type="text" name="firstname" placeholder="First Name" class="form-control">
+        </div>
+        <div class="col-xs-3">
+          <input required type="text" name="lastname" placeholder="Last Name" class="form-control">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="form-group">
+            <select required class="form-control" name="progstartyear">
+              <option value="" disabled selected>Programming Start Year</option>
+              <script>
+                for (var i = 2016; i >= 1900; i--)
+                  document.write('<option value="' + i + '">' + i + '</option>')
+              </script>
+            </select>
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <div class="checkbox">
+            <label>
+              <input required name="prog" type="checkbox"> Do you like programming?
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3 submit">
+          <input type="submit" name="submit" class="btn btn-primary">
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

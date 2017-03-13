@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+
+body {
+    background-image: url("http://www.desktopimages.org/pictures/2012/0930/1/orig_442649.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 10px;
+    color: white;
+}
+
+div.container {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 15px;
+  width: inherit;
+  height: auto;
+  overflow: scroll;
+  position: absolute;
+  margin: auto;
+  max-width: 800px;
+  top: 150px; bottom: 75px; left: 0px; right: 0px;
+}
+
+h1, h2 {
+  font-family: 'Ubuntu', 'Indie Flower', sans-serif;
+  text-align: center;
+}
+
+.error {
+  color: rgb(230, 0, 0);
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+
+input.btn.btn-default {
+  font-family: "Indie Flower";
+  font-size: 150%;
+  font-weight: 600;
+  padding: 15px;
+  color: #ffffff;
+  border-radius: 15px;
+  background-color: #3a3a3a;
+  border: solid 2px #3a3a3a;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  width: 25%;
+  transition: 0.5s;
+}
+
+.btn.btn-default:hover {
+  border-color: #fd644d;
+  transition: 0.5s;
+}
+.btn.btn-default:active {
+  background-color: #fd644d;
+  color: #3a3a3a;
+}
+
+.placehold  {
+  color: rgba(0,0,0,0);
+}
+
+ul {
+  list-style-type: none;
+  font-size: 200%;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+a {
+  color: #ffffff;
+  transition: 0.25s;
+}
+
+a:hover {
+  color: #fd644d;
+  text-decoration: none;
+}

@@ -1,0 +1,112 @@
+<?xml version="1.0" ?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:output method="html" version="5.0" encoding="UTF-8" indent="yes" />
+         <xsl:template match="/tracks">
+                 <html>
+                <style>
+                @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+                @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+
+                body  {
+                        background: url("https://www.planwallpaper.com/static/images/i-should-buy-a-boat.jpg") no-repeat center center fixed;
+                        -webkit-background-size: cover;
+                        -moz-background-size: cover;
+                        -o-background-size: cover;
+                        background-size: cover;
+                        text-align: center;
+                        margin: 0;
+                        padding: 0;
+                        font-family: Anton, sans-serif;
+                }
+
+
+                h1, h2{
+                font-family: 'Ubuntu', 'Indie Flower', sans-serif;
+                text-align: center;
+                }
+
+
+                table {
+                        width: 100%;
+                        background: rgba(211,211,11,0.1);
+                        border: 3px solid black;
+                }
+
+                table, th, td {
+                        border: 5px solid black;
+                        border-collapse: collapse;
+                }
+
+                th, td {
+                        padding: 8px;
+                        text-align: left;
+                }
+
+                div {
+                        margin: 0 auto;
+                        text-align: left;
+                        width: 600px;
+                        display: inline-block;
+                        border-radius: 3px;
+                        background-color: #f2f2f2;
+                        padding: 20px;
+                        font-size: 20px;
+                }
+                </style>
+                 <head>
+                <title>CPS530 Lab07 Part1 - Jawad Khudadad</title>
+                </head>
+                 <body>
+                 <h2>Part 2 - XML, XSLT and CSS</h2>
+                <div>
+                        <b>Radio Name: </b> <xsl:value-of select = "radioname" /> <br />
+                        <b>Rank: </b> <xsl:value-of select = "rank" />  <br />
+                        <b>Radionomy: </b> <xsl:value-of select = "isradionomy" />  <br />
+                        <b>Radio URl: </b> <a href="{radurl}"> <xsl:value-of select="radurl" /></a>
+                </div> <br /> <br />
+                <div>
+                        <table>
+                        <tr>
+                                <th colspan = "2">  Track Information </th>
+                        </tr>
+                        <xsl:for-each select ="track">
+                                <tr>
+                                        <th> Unique ID </th>
+                                        <td> <xsl:value-of select = "uniqueid" /> </td>
+                                </tr>
+                                <tr>
+                                        <th> Title</th>
+                                        <td> <xsl:value-of select = "title" /> </td>
+                                </tr>
+                                <tr>
+                                        <th> Artist </th>
+                                        <td> <xsl:value-of select = "artists" /> </td>
+                                </tr>
+                                <tr>
+                                        <th> Start Time (European - CET) </th>
+                                        <td> <xsl:value-of select = "starttime" /> </td>
+                                </tr>
+                                <tr>
+                                        <th> Play Duration</th>
+                                        <td> <xsl:value-of select = "playduration" /> </td>
+                                </tr>
+                                <tr>
+                                        <th> Current </th>
+                                        <td> <xsl:value-of select = "current" /> </td>
+                                </tr>
+                                <tr>
+                                        <th> Cover </th>
+                                        <td> <img src="{cover}" alt="logo" style="width:200px; height:200px;"> <xsl:value-of select="cover" /></img> </td>
+                                </tr>
+                                <tr>
+                                        <th> Call Me Back </th>
+                                        <td> <xsl:value-of select = "callmeback" /> </td>
+                                </tr>
+                        </xsl:for-each>
+                        </table>
+                </div>
+                </body>
+                </html>
+          </xsl:template>
+</xsl:stylesheet>
